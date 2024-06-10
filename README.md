@@ -1,20 +1,20 @@
-# Astro Starter Kit: Basics
+# Mi Portafolio - Desarrollado con Astro
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido a mi repositorio de portafolio en GitHub! Este proyecto está creado utilizando Astro, un framework moderno para la construcción de sitios web estáticos rápidos y eficientes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Sobre Este Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este repositorio contiene el código fuente de mi portafolio personal, donde muestro mis proyectos, habilidades y experiencia profesional. Astro me permite construir este sitio con un rendimiento excepcional y una arquitectura flexible.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características
 
-## 🚀 Project Structure
+- **Desarrollo con Astro**: Utilización de Astro para generar un sitio web estático optimizado.
+- **Componentes React**: Implementación de componentes interactivos y reutilizables.
+- **Estilo Personalizado**: Diseño único con CSS personalizado y algunas librerías de estilo.
+- **Optimización de Rendimiento**: Código optimizado para un rendimiento rápido y eficiente.
+- **Accesibilidad**: Enfoque en la accesibilidad para asegurar una experiencia inclusiva para todos los usuarios.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del Proyecto
 
 ```text
 /
@@ -30,25 +30,27 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Cómo Ejecutar el Proyecto
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/mi-portafolio-astro.git
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. **Instalar dependencias**:
+   ```bash
+   cd mi-portfolioastro
+   npm install
 
-## 🧞 Commands
+3. **Iniciar el servidor de desarrollo**:
+   ```bash
+   npm start
 
-All commands are run from the root of the project, from a terminal:
+4. **Construir para producción**:
+   ```bash
+   npm run build
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contacto
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Si tienes alguna pregunta o deseas colaborar, no dudes en contactarme a través de https://dev.pejerrey@gmail.com
+<br>
+¡Gracias por visitar mi repositorio y explorar mi trabajo!
