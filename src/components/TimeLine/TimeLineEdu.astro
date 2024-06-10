@@ -1,0 +1,26 @@
+---
+import Line from "./Line.astro"
+
+const puntosEdu = [{
+    fecha: 'Agosto 2017 - Agosto 2022',
+    titulo: 'Universidad Nacional Pedro Ruiz Gallo',
+    descripcion: ['Bachiller en Ingeniería de Sistemas']
+    },
+
+    {fecha: '2023 - Actualmente',
+    titulo: 'Udemy',
+    descripcion: ['Desarrollo Web Completo con HMTL5, CSS3, JS AJAX, PHP y MYSQL.','React: De cero a experto ( Fernando Herrera )']
+    },
+    ]
+
+---
+
+<div class="w-[500px] flex-1">
+    <ol class="relative border-s border-black dark:border-gray-700"> 
+        {
+            puntosEdu.map(({fecha,titulo, descripcion})=> (
+                <Line fecha={fecha} titulo={titulo} descripcion={descripcion}/>
+            ))
+        }
+    </ol>
+</div>

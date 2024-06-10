@@ -1,0 +1,41 @@
+---
+import AsideBarMenu from '../components/AsideBarMenu/AsideBarMenu.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+		<style>
+			@font-face {
+				font-family: 'Cascadia';
+				src: url('../fonts/CascadiaCode/CascadiaCodePL.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+			
+			.font-Cascadia{
+				font-family: 'Cascadia', sans-serif;
+			}
+			</style>
+	</head>
+	<body  class="font-Cascadia">
+		<AsideBarMenu/>
+		<main class="h-screen p-1 xl:overflow-y-auto md:bg-[url('../img/fondo-nubes.webp')]  xl:p-2 xl:h-screen xl:ml-64 xl:bg-cover xl:bg-center">
+			<slot />
+		</main>
+	</body>
+</html>

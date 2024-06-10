@@ -1,0 +1,37 @@
+---
+import Line from "./Line.astro";
+
+const puntosExp = [
+  {
+    fecha: "22-NOV-1996",
+    titulo: "consigue ventas",
+    trabajo: "Desarrollador Frontend - React, Styled Component",
+    descripcion: [
+      'Desarrolle la vista del Home y Perfil de Usuario para un Marketplacet',
+      'Utilicé tecnologías y librerías externas como Styled Components para crear una interfaz de usuario moderna y altamente funcional,lo que mejoró significativamente la experiencia del usuario.'
+    ],
+  },
+
+  {
+    fecha: "24-DIC-1996",
+    titulo: "Universidad Nacional Pedro Ruiz Gallo",
+    trabajo: 'Asistente Base de Datos',
+    descripcion: ['Participe en la creación de base de datos para un sistema que ayude en los procesos de tesorería de la Universidad Nacional Pedro Ruiz Gallo.'],
+  },
+];
+---
+
+<div class="w-[500px] flex-1">
+  <ol class="relative border-s border-black dark:border-gray-700">
+    {
+      puntosExp.map(({ fecha, titulo, trabajo, descripcion }) => (
+        <Line
+          fecha={fecha}
+          titulo={titulo}
+          trabajo={trabajo}
+          descripcion={descripcion}
+        />
+      ))
+    }
+  </ol>
+</div>

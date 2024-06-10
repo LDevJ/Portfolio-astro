@@ -1,0 +1,120 @@
+---
+import TimeLineEdu from "../components/TimeLine/TimeLineEdu.astro";
+import TimeLineExp from "../components/TimeLine/TimeLineExp.astro";
+import Layout from "../layouts/Layout.astro";
+
+// const Icons = [
+//   { src: "../icons/html5.svg", alt: "HTML5", description: "HMTL5" },
+//   { src: "../icons/css.svg", alt: "CSS", description: "CSS" },
+//   { src: "../icons/javascript.svg", alt: "JavaScript" },
+// ];
+---
+
+<Layout title="Sobre Mi">
+
+  <!--SOBRE MI-->
+  <div class="ml-10 flex flex-col gap-4 w-[750px] h-[173] my-12">
+    <h1 class="text-5xl font-bold text-center ">Sobre Mi</h1>
+    <p class="text-base leading-tight">
+      I am a freelancer based in the Spanish and i have been building noteworthy
+      UX/UI designs and websites for years, which comply with the latest design
+      trends. I help convert a vision and an idea into meaningful and useful
+      products. Having a sharp eye for product evolution helps me prioritize
+      tasks, iterate fast and deliver faster.
+    </p>
+  </div>
+
+  <!--SKILLS -->
+  <div class="ml-40 flex flex-col w-[800px] h-auto items-center bg-[#000F0A] rounded-xl ">
+    <h2 class="text-4xl font-bold tex-center text-white">My Skills</h2>
+    <div class="px-5 py-5 flex justify-center align-center mx-10 w-[700px] h-auto flex-wrap gap-0.5">
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/html5.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">HTML5</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/css.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">CSS</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/javascript.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">JAVASCRIPT</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/typescript.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">TYPESCRIPT</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/wordpress.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">WORDPRESS</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-[64px]" src="../icons/Php_dark.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">PHP</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-[64px]" src="../icons/Astro_dark.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">ASTRO</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/react.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">REACT</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/git.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">GIT</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-full" src="../icons/github.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">GITHUB</p>
+      </div>
+
+      <div class="h-[100px] w-[100px] flex flex-col justify-center items-center">
+        <img class="h-[64px] w-[64px]" src="../icons/tailwindcss.svg" alt="html5" />
+        <p class="text-white text-sm mt-2 font-bold">TAILWIND</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!--LINEAS DE TIEMPO-->
+  <div class="flex w-[1000px] ml-80 mt-10">
+
+    <!-- EDUCACION LINEA -->
+    <div class="flex gap-4 flex-col">
+      <h3 class="text-3xl font-bold ml-10">
+        EDUCACIÓN
+      </h3>
+      <TimeLineEdu />
+    </div>
+
+    <!-- EXPERIENCIA LINEA -->
+    <div class="flex gap-4 flex-col">
+      <h3 class="text-3xl font-bold ml-10">EXPERIENCIA</h3>
+      <TimeLineExp />
+    </div>
+  </div>
+</Layout>
+
+<style>
+@font-face {
+  font-family: 'Cascadia';
+  src: url('../fonts/CascadiaCode/CascadiaCodePL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-Cascadia{
+  font-family: 'Cascadia', sans-serif;
+}
+</style>

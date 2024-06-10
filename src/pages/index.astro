@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Image from 'astro/components/Image.astro';
+
+import FotoDev from '/public/img/yo.webp';
+
+---
+
+<Layout title="LDevJ">
+		<!--Frase ATS -->
+		<div class="mt-10 mx-5 h-auto xl:mt-32 xl:ml-10 xl:w-[852px]">
+			<h2 class="text-base md:text-lg xl:text-5xl break-words">"Si puedes imaginarlo, puedes programarlo"</h2>
+			<p class="text-sm md:text-base xl:text-1.5xl mt-5 text-right break-words">"Programación ATS"</p>
+		</div>
+
+		<!-- Inicio Hola Mundo e Imagen -->
+		<div class="h-auto mt-10 xl:flex xl:w-full xl:p-4 xl:flex-row">
+
+			<div class="mx-4 text-center xl:flex xl:items-center xl:justify-center xl:gap-10 xl:flex-col xl:ml-13 xl:flex-1">
+				<h1 class="text-xl font-bold my-5 md:text-4xl lg:text-5xl text-center xl:text-[48px] xl:leading-none xl:text-left break-words"> Hola Mundo, Soy Luis Frontend Developer</h1>
+				<a class="text-sm border-black border-b-2 border-r-2 px-2 py-2 break-words xl:w-max md:text-base xl:text-1 2xl:text-xl " href="/Contacto">Contáctame</a>
+			</div>
+
+			<div class="h-auto mt-20 flex justify-center items-center mx-4">
+				<Image class="" src={FotoDev} alt="imagen-referencia-developer" loading="eager" decoding="sync"  />
+			</div>
+		</div>
+</Layout>
