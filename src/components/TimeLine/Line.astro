@@ -14,7 +14,7 @@ const {fecha, titulo, trabajo, descripcion} = Astro.props;
     <time class="mb-1 text-sm font-normal leading-none text-black dark:text-gray-500">{fecha}</time>
     <h3 class="text-lg font-semibold text-black dark:text-white uppercase">{titulo}</h3>
     <p class="mb-4 mt-1 text-base font-bold text-dark dark:text-gray-400">{trabajo}</p>
-    {descripcion?.map((des)=>
+    {descripcion.map((des)=>
     <p class="mb-4 mt-1 text-base font-normal text-dark dark:text-gray-400">{des}</p>)}
 </svg></a>
 </li>

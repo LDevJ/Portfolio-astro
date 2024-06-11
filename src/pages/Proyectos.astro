@@ -1,8 +1,170 @@
 ---
+import Card from "../components/Card/Card.astro";
 import Layout from "../layouts/Layout.astro";
+
+const Projects = [
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 1"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS", "React", "Node"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 2"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 3"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 4"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 4"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 4"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 4"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+  {
+    titulo: "Proyecto SVGL",
+    img:{
+        src: "/img/proyecto.png",
+        alt: "Proyecto 4"
+    },
+    descripcion: "This is sample project description random things are here in description. This is sample project lorem impsun generator for dymmt content",
+    Lenguajes: ["HTML", "CSS"],
+    linkPreview: {
+        href:'#',
+        titulo: 'Link Preview',
+    },
+    linkGitHub: {
+        href:'#',
+        titulo: 'View Code',
+    },
+  },
+
+];
 
 ---
 
 <Layout title="Proyectos">
+  <div class="mx-10">
+    <h2 class="text-4xl text-center mt-10 font-bold">Mis Proyectos</h2>
+    <p class="text-xl mt-5 ">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, autem
+      maxime sit error adipisci laboriosam facere porro fugiat obcaecati
+      officiis. Esse nobis, soluta rerum ea magnam repellat laborum odio optio!
+    </p>
+  </div>
 
+  <!--Cards -->
+  <div class="flex flex-row flex-wrap gap-5 mt-10 mx-5 justify-evenly">
+    {Projects.map(({titulo, img, descripcion, Lenguajes, linkPreview, linkGitHub}) =>(
+        <Card 
+        titulo={titulo}
+        img={img}
+        descripcion={descripcion}
+        lenguajes={Lenguajes}
+        linkPreview={linkPreview}
+        linkGitHub={linkGitHub}   />
+    ))}
+    
+  </div>
 </Layout>
