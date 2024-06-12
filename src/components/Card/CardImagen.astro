@@ -1,0 +1,43 @@
+---
+interface Props {
+  titulo: string,
+  descripcion: string,
+  img: {
+    src: string,
+    alt: string
+  }
+}
+
+const { titulo, descripcion, img} = Astro.props;
+
+---
+
+
+<!-- <div>
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <div>
+          <img class="rounded-lg" src={img.src} alt={img.alt}>
+        </div>
+    </figure>
+
+    <figcaption class="px-4 text-lg text-black bottom-6">
+        <p>{titulo}</p>
+    </figcaption>
+</div> -->
+
+
+<figure class="relative max-w-sm border border-black border-t-2 border-l-2 border-r-2 border-b-2 rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+    <div>
+      <img class="border border-black border-t-0 border-l-0 border-r-0 border-b-2 rounded-lg" src={img.src} alt={img.alt}>
+    </div>
+    
+    <div class="mt-2 flex flex-col flex-wrap gap-2">
+        <h1 class="text-xl">{titulo}</h1>
+        <p class="text-sm">{descripcion}</p>
+    </div>
+
+    <!-- <figcaption class="absolute px-4 text-lg text-black bottom-6">
+        <p>{titulo}</p>
+    </figcaption> -->
+  </figure>
+  

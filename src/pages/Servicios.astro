@@ -1,18 +1,86 @@
 ---
 import Acordion from "../components/Acordion/Acordion.astro";
+import CardImagen from "../components/Card/CardImagen.astro";
 import Layout from "../layouts/Layout.astro";
+
+// interface Props {
+//   indice: number;
+//   titulo: string,
+//   img: {
+//     src: string,
+//     alt: string
+//   }
+//   description: string
+// }
+
+const Services = [
+    {
+    indice: 1,
+    titulo: 'Diseño Responsivo',
+    img: {
+        src: '/img/diseno-responsive.jpg',
+        alt: 'imagen servicio diseño responsivo'
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus orci diam. Quisque libero sem, dignissim eu mauris sit amet, venenatis tincidunt ipsum. Vestibulum a eros consequat sapien bibendum blandit. Aliquam fermentum tempus leo in viverra.'
+    },
+    {
+    indice: 2,
+    titulo: 'Diseño Responsivo',
+    img: {
+        src: '/img/diseno-responsive.jpg',
+        alt: 'imagen servicio diseño responsivo'
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus orci diam. Quisque libero sem, dignissim eu mauris sit amet, venenatis tincidunt ipsum. Vestibulum a eros consequat sapien bibendum blandit. Aliquam fermentum tempus leo in viverra.'
+    },
+    {
+    indice: 3,
+    titulo: 'Diseño Responsivo',
+    img: {
+        src: '/img/diseno-responsive.jpg',
+        alt: 'imagen servicio diseño responsivo'
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus orci diam. Quisque libero sem, dignissim eu mauris sit amet, venenatis tincidunt ipsum. Vestibulum a eros consequat sapien bibendum blandit. Aliquam fermentum tempus leo in viverra.'
+    },
+    {
+    indice: 4,
+    titulo: 'Diseño Responsivo',
+    img: {
+        src: '/img/diseno-responsive.jpg',
+        alt: 'imagen servicio diseño responsivo'
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus orci diam. Quisque libero sem, dignissim eu mauris sit amet, venenatis tincidunt ipsum. Vestibulum a eros consequat sapien bibendum blandit. Aliquam fermentum tempus leo in viverra.'
+    },
+
+]
+
 
 ---
 
 <Layout title="Servicios">
     
+    <!-- Titulo y Descripcion -->
+    <div class="flex flex-col items-center gap-5 mx-4 text-center">
+        <h1 class="text-4xl mt-10">Mis Servicios</h1>
+        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus orci diam. Quisque libero sem, 
+            dignissim eu mauris sit amet, venenatis tincidunt ipsum. Vestibulum a eros consequat sapien bibendum blandit. Aliquam fermentum 
+            tempus leo in viverra.
+        </p>
+    </div>
+
     <!--Servicios Acordion -->
-    <div class="flex gap-3 flex-col">
-        <Acordion />
-        <Acordion />
-        <Acordion />
-        <Acordion />
-        <Acordion />
+
+    <div class="mt-10 flex flex-wrap gap-5 justify-center w-full">
+        <!-- {
+            Services.map(({indice, titulo, img, description}) =>(
+                <Acordion indice={indice} titulo={titulo} img={img} description={description} />
+            ))
+        } -->
+
+        {
+            Services.map(({titulo, description , img}) =>(
+                <CardImagen  titulo={titulo} descripcion={description} img={img} />
+            ))
+        }
     </div>
 
 </Layout>
